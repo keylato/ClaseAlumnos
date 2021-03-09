@@ -6,7 +6,7 @@ namespace Alumnos
     {
         public static void Main(string[] args)
         {
-            Personas persona1 = new Personas("Miguel", "Mendoza");
+            Persona persona1 = new Persona("Miguel", "Mendoza");
             Console.WriteLine(persona1.NombreCompleto);
             persona1.Presentacion();
 
@@ -14,9 +14,17 @@ namespace Alumnos
             Console.WriteLine(persona1.NombreCompleto);
             persona1.Presentacion();
 
-            persona1.colorFavorito= "rosa";
+            persona1.colorFavorito = "rosa";
 
             Console.WriteLine(persona1.colorFavorito);
+
+            //alumnos
+
+            Alumno Toribio = new Alumno("Toribio", "Perez", 2106);
+            Console.WriteLine("Primer alumno: " + Toribio.NombreCompleto);
+            Toribio.Presentarse();
+
+
 
         }
 

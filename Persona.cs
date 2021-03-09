@@ -5,7 +5,7 @@ namespace Alumnos
 {
 
 }
- class Personas
+ class Persona
 {
 
     public string name;
@@ -26,7 +26,7 @@ namespace Alumnos
     }
 
 
-    public Personas(string name, string apellido)
+    public Persona(string name, string apellido)
     {
       
         this.name = name;
