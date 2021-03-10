@@ -8,12 +8,12 @@ namespace Alumnos
  class Persona
 {
 
-    public string name;
+    public string nombre;
     public string apellido;
 
     public string NombreCompleto
     {
-        get=> this.name + " "+ apellido;
+        get=> this.nombre + " "+ apellido;
     }
 
     private string ColorFavorito;
@@ -26,16 +26,16 @@ namespace Alumnos
     }
 
 
-    public Persona(string name, string apellido)
+    public Persona(string nombre, string apellido)
     {
       
-        this.name = name;
+        this.nombre = nombre;
         this.apellido = apellido;
     }
     
     public void Presentacion ()
     {
-        Console.WriteLine("Hola, me llamo" + name + apellido);
+        Console.WriteLine("Hola, me llamo" + nombre + apellido);
     
     }
 
