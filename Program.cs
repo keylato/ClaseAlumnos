@@ -43,10 +43,32 @@ namespace Alumnos
             Console.WriteLine("La materia de" + materiasDeInteres[2].nombre + "Se ve en" + materiasDeInteres[2].semestre);
             Console.WriteLine("Me interesan " + materiasDeInteres.Count + "materias");
 
+            Materia materiaAborrar = null;
+
             for(int i = 0; i < materiasDeInteres.Count; i++)
             {
-                Console.WriteLine(materiasDeInteres[i].nombre);
+                if (materiasDeInteres[i].nombre == "Sistemas interativos I")
+                {
+                    Materia
+                    //Encontramos la materia
+                    ///mmateriaDeinteres.RemoveAt(i);
+                    materiaABorrar = materiasDeInteres[i];
+                    break;
+
+                    
+
+                }
+
             }
+            if (materiaABorrar !=null)
+            {
+                materiasDeInteres.Remove(materiaAborrar);
+            }
+            Console.WriteLine("Ahora me interesan" + materiasDeInteres.Count + "materias");
+            Console.WriteLine("Primer materia ahora es:" + materiasDeInteres[0].nombre);
+            
+
+
 
 
             
